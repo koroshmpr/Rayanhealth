@@ -1,0 +1,114 @@
+@include media-breakpoint-up(lg) {
+  .aboutus_container {
+    .heading {
+      font-size: 3rem;
+    }
+    img {
+      height: 350px;
+    }
+  }
+  .start-lg-50 {
+    left:50% !important;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .aboutus_container {
+    img {
+      height: 500px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-down(sm) {
+
+  .fs-1 {
+    font-size: calc(1.325rem + 4vw) !important;
+  }
+
+  .fs-2 {
+    font-size: calc(1.325rem + 3vw) !important;
+  }
+
+  .fs-3 {
+    font-size: calc(1.325rem + 2vw) !important;
+  }
+
+  .fs-4 {
+    font-size: calc(1.325rem + 1vw) !important;
+  }
+
+  .fs-5 {
+    font-size: 1.125rem !important;
+  }
+
+  .fs-6, p, span {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  small, .small {
+    font-size: 0.875rem !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-down(md) {
+
+}
+
+@media (min-width: 2400px) {
+  .display-1 {
+    font-size: 8rem !important;
+  }
+  .display-2 {
+    font-size: 7rem !important;
+  }
+  .display-3 {
+    font-size: 6rem !important;
+  }
+  .display-4 {
+    font-size: 5.5rem !important;
+  }
+  .display-5 {
+    font-size: 5rem !important;
+  }
+  .display-6 {
+    font-size: 4rem !important;
+  }
+  .fs-1, h1 {
+    font-size: 5rem !important;
+  }
+
+  .fs-2, h2 {
+    font-size: 4rem !important;
+  }
+
+  .fs-3, h3 {
+    font-size: 3.5rem !important;
+  }
+
+  .fs-4, h4 {
+    font-size: 2.5rem !important;
+  }
+
+  .fs-5, h5 {
+    font-size: 1.8rem !important;
+  }
+
+  .fs-6, h6, p, span, div, a {
+    font-size: 1.4rem !important;
+    line-height: 1.7;
+  }
+  small, .small {
+    font-size: 1rem !important;
+  }
+  .container {
+    max-width: 1900px;
+  }
+}

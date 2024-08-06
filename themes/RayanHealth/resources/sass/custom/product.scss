@@ -1,0 +1,21 @@
+.dashbord-item.is-active {
+  a {
+    background-color: $primary;
+    color:white!important;
+  }
+}
+.woocommerce form .form-row {
+  input.input-text , textarea {
+    padding:10px;
+    border-color: rgba(128, 128, 128, 0.22) !important;
+    border-radius: 5px;
+  }
+}
+.badge-shop {
+  min-width: 23px;
+  aspect-ratio: 1;
+  line-height: 1.5;
+}
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals {
+  width: unset;
+}

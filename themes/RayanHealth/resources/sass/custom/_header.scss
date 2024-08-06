@@ -1,0 +1,34 @@
+.megamenu a , .desktop-menu a {
+  position: relative;
+  display: inline-block; // Ensure the 'a' tag behaves like a block element for the pseudo-element to align
+
+  &::before {
+    content: '';
+    height: 2px;
+    display: block;
+    width: 0;
+    position: absolute;
+    background-color: $primary;
+    right: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    &::before {
+      width: 40px;
+    }
+  }
+}
+#navbarTogglerMenu {
+  a {
+    color:white;
+
+  }
+}
+#backToTop {
+  bottom:20px;
+  left:20px;
+  width:45px;
+  height:45px;
+}
