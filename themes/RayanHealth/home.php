@@ -9,5 +9,3 @@ get_template_part('template-parts/Homepage/banner-slider');
 get_template_part('template-parts/blog/recently-post-slider');
 
 get_footer();
-
-

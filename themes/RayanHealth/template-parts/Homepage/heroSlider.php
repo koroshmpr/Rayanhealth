@@ -6,13 +6,17 @@ if ($sliders) : ?>
             $i = 1;
             foreach ($sliders as $slider) : ?>
                 <div class="swiper-slide h-auto position-relative text-center">
-                    <?php if ($slider['slide_type'] == 'image') : ?>
+                    <?php
+                    if ($slider['slide_type'] == 'image') : ?>
                         <img class="object-fit-cover <?= $slider['image_mobile'] ? 'd-none d-lg-inline' : ''; ?> w-100 h-100"
                              src="<?= $slider['image']['url'] ?? ''; ?>"
                              alt="<?= $slider['image']['title'] ?? ''; ?>">
-                        <img class="object-fit-cover d-lg-none w-100" src="<?= $slider['image_mobile']['url'] ?? ''; ?>"
-                             alt="<?= $slider['image_mobile']['title'] ?? ''; ?>">
-                    <?php elseif ($slider['slide_type'] == 'video') : ?>
+                        <?php if ($slider['image_mobile']): ?>
+                            <img class="object-fit-cover d-lg-none w-100"
+                                 src="<?= $slider['image_mobile']['url'] ?? ''; ?>"
+                                 alt="<?= $slider['image_mobile']['title'] ?? ''; ?>">
+                        <?php endif;
+                    elseif ($slider['slide_type'] == 'video') : ?>
                         <video autoplay controls='false' class="object-fit-cover w-100 h-100"
                                src="<?= $slider['video'] ?? ''; ?>"></video>
                     <?php endif; ?>
