@@ -1,7 +1,10 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta name="keywords" content="<?= get_bloginfo('name'); ?>">
+    <?php
+    $focus_keyword = get_post_meta(get_the_ID(), 'rank_math_focus_keyword', true);
+    ?>
+    <meta name="keywords" content="<?= $focus_keyword ??  get_bloginfo('name'); ?>">
     <meta name="description" content="<?= get_bloginfo('description'); ?>">
     <meta name="author" content="<?= get_bloginfo('name'); ?>">
     <meta charset="<?php bloginfo('charset'); ?>">
